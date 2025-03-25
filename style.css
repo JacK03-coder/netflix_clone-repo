@@ -1,0 +1,374 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Main Background */
+.main {
+    background-image: url("Assets/images/netflix_bg.jpg");
+    min-height: 70vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+body {
+    background-color: black;
+}
+
+/* Opacity-Box */
+.main .opacity-box {
+    min-height: 100%;
+    width: 100%;
+    opacity: 0.60;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+/* Nav-Bar for page */
+
+.nav-bar {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+}
+
+
+.nav-bar button,
+select,
+img {
+    position: relative;
+    z-index: 10;
+}
+
+/*BUTTONS'S*/
+.btn-red-sign {
+    height: 32px;
+    width: 73px;
+    border: 1px solid black;
+    margin-right: 3px;
+    border-radius: 3px;
+    background-color: rgba(175, 15, 15, 0.796);
+    color: white;
+}
+
+
+.btn {
+    height: 56px;
+    width: 300px;
+    border-radius: 3px;
+    background-color: black;
+    opacity: 0.88;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.btn-select {
+    width: 110px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: rgba(18, 18, 18, 0.704);
+    font-weight: 500;
+    padding: 1px 10px;
+    color: white;
+}
+
+.btn-red-get {
+
+    height: 56px;
+    width: 125px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(155, 9, 9);
+    color: white;
+    font-family: 'Lucida Sans';
+    font-weight: 400;
+    font-size: large;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/* Centner content Info and Other Stuff */
+.center-content {
+    height: 100%;
+    color: white;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 50px;
+    gap: 19px;
+    z-index: 10;
+    margin-top: 126px;
+    gap: 30px;
+    margin-left: 80px;
+    padding-bottom: 200px;
+}
+
+
+.center-content> :first-child {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1200;
+    font-size: 48px;
+    text-align: center;
+}
+
+.center-content>:nth-child(2) {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.center-content>:last-child {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 30;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+/* sparation line */
+
+.sparation-line {
+    border: 4px solid rgb(28, 28, 28);
+}
+
+/* ---------------------------------------------------------------------- */
+/* Scroll bar for movies */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scroll-movie {
+    width: 80vw;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 10px;
+    scrollbar-width: none;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+    display: flex;
+}
+
+.scroll-movie ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.scroll-movie ul li {
+    flex: 0px 0px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scroll-movie ul li img {
+    height: 290px;
+    width: 170px;
+}
+
+.scroll-movie ul li img:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+.heading {
+    background-color: rgba(0, 0, 0, 0.99);
+    color: white;
+    border-top: 2px solid rgb(244, 11, 11);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 40%;
+    padding-top: 40px;
+    padding-left: 150px;
+    font-size: 20px;
+    box-shadow: inset 30px 30px 50px rgba(28, 6, 171, 0.33);
+    padding-bottom: 20px;
+
+}
+
+/* --------------------------------------------------------------------------- */
+/* More Reasons to join Section...*/
+
+.reason-to-join {
+    width: 80vw;
+}
+
+.Rheading {
+    color: white;
+    padding: 20px 10px 35px 20px;
+    font-size: 35px;
+}
+
+.rbox {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rbox div {
+    height: 291px;
+    width: 300px;
+    border: transparent;
+    padding: 32px 24px 128px 24px;
+    border-radius: 20px;
+    background-color: #403c6475;
+    box-shadow: inset -10px -10px 50px rgba(248, 3, 3, 0.492);
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    gap: 20px;
+    scrollbar-width: none;
+}
+.rbox div:hover {
+    border: 1px solid rgb(113, 74, 74);
+    transform: scale(1.1);
+}
+
+
+.rbox h2 {
+    color: white;
+    word-spacing: 2px;
+    font-size: 23px;
+}
+
+.rbox p {
+    color: white;
+    word-spacing: 2px;
+    font-size: 17px;
+}
+
+
+/* ------------------------------------------ */
+
+.askedques {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+}
+
+.askedques h2 {
+    color: white;
+    padding: 20px 10px 35px 20px;
+    font-size: 35px;
+}
+
+.askedques button {
+    width: 80vw;
+    margin: 10px 20px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 300;
+    padding: 10px;
+    background-color: rgba(23, 23, 23, 0.99);
+    color: white;
+    border: 1px solid white;
+}
+
+.askedques button:hover {
+    border: 1px solid rgb(113, 74, 74);
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------ */
+
+.unnecessary h3 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    padding: 12px 0 20px 0;
+    text-align: center;
+
+}
+
+.uOptions {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.uOptions :first-child {
+    width: 550px;
+    color: white;
+    font-size: 19px;
+    font-weight: 200;
+}
+
+.uOptions :last-child {
+    width: 150px;
+}
+
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    margin: 40px auto 0px auto;
+    gap: 40px;
+
+}
+
+.Questions {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+footer a {
+    color: white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    gap: 130px;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.language {
+    margin-top: 30px;
+    width: 100%;
+    size: 34px;
+}
+
+footer p {
+    width: 100%;
+}
